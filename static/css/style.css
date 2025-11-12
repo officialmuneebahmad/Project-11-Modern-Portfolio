@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+*{
+    font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+.sun-icon {
+    fill: #fbbf24;
+}
+.moon-icon {
+    fill: #e5e7eb;
+}
+.github-light {
+            fill: #1f1f1f;
+}
+.github-dark {
+    fill: #ffffff;
+}
+.custom-font-1{
+  font-family: 'Story Script', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.custom-font-2{
+  font-family: 'Orbitron', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.custom-font-3{
+  font-family: 'Playwrite CZ', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.custom-font-4{
+  font-family: 'Silkscreen', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Adjust caret (cursor) style */
+#code .Typewriter__cursor {
+    font-size: 48px !important; /* match your typewriter text */
+    line-height: 0;
+    font-weight: bold;
+    color: #22c55e; /* caret color */
+  }
+
+#app .Typewriter__cursor {
+    font-size: 48px !important; /* match your typewriter text */
+    line-height: 0;
+    font-weight: bold;
+    color: #000; /* caret color */
+  }
+
+  @media (max-width: 1024px) {
+  #code .Typewriter__cursor {
+    font-size: 32px !important; /* match your typewriter text */
+    line-height: 0;
+    font-weight: bold;
+    color: #22c55e; /* caret color */
+  }
+
+  #app .Typewriter__cursor {
+    font-size: 32px !important; /* match your typewriter text */
+    line-height: 0;
+    font-weight: bold;
+    color: #000; /* caret color */
+  }
+
+/* Clean dropdown animation: fade + slight slide */
+  @keyframes fadeSlide {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px) scale(0.98);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .show {
+    display: flex !important;
+    animation: fadeSlide 0.25s ease-out;
+    transform-origin: top center;
+  }
+
+}
